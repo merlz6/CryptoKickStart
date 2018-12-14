@@ -1,0 +1,101 @@
+/* SCREEN SIZE SMALLER THAN 576px  */
+.d-block {
+  width:100%;
+  height:500px;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+  }
+
+  .priceContact {
+    display: flex;
+    flex-direction: row;
+  }
+  .d-block {
+    width:100%;
+    height:500px;
+  }
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin:0px 8px 5px 8px;
+  }
+
+  .priceContact {
+    display: flex;
+    flex-direction: row;
+  }
+  .carouselHolder {
+    margin:5px 10px;
+  }
+  .d-block {
+    width:100%;
+    height:600px;
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin:0px 8px 5px 8px;
+  }
+
+  .priceContact {
+    display: flex;
+    flex-direction: row;
+  }
+  .carouselHolder {
+    margin:5px 10px;
+  }
+
+  .d-block {
+    width:100%;
+    height:600px;
+  }
+
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin:0px 8px 5px 8px;
+  }
+
+  .priceContact {
+    display: flex;
+    flex-direction: row;
+  }
+  .carouselHolder {
+    margin:0px 10px;
+    height:500px;
+  }
+
+
+  .d-block {
+    width:100%;
+    height:600px;
+  }
+}
