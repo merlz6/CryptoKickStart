@@ -32,6 +32,26 @@ footer {
   border-top: 1px solid grey;
 }
 
+.servicesBox {
+
+  display: inline;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  border-top: 1px solid grey;
+  margin: 0 25px;
+}
+li {
+
+}
+.listItemName {
+  font-size: 18px;
+  font-weight: 500;
+  margin:auto 100px;
+}
+
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .header {

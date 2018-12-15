@@ -19,12 +19,12 @@
 <body ng-controller="MainController as ctrl">
   <nav class="header">
 
-      <h2><a href="#">The Volz Salon</a></h2>
-      <div class="priceContact">
-        <h3><a href="#" ng-click="ctrl.toggleShowServices()">Prices</a></h3>
+    <h2><a href="#" ng-click="ctrl.toggleHome()">The Volz Salon</a></h2>
+    <div class="priceContact">
+      <h3><a href="#" ng-click="ctrl.toggleShowServices()">Prices</a></h3>
 
-        <h3><a href="#">Contact</a></h3>
-      </div>
+      <h3><a href="#" ng-click="ctrl.toggleContacts()">Contact</a></h3>
+    </div>
 
 
   </nav>
@@ -37,7 +37,7 @@
 
   <!-- GROUPING home page to hide for services or contact "pages"  -->
 
-  <div class='homePage' ng-if="!ctrl.showServices">
+  <div class='homePage' ng-if="ctrl.showHomePage">
     <!-- carousel -->
     <div class="carouselHolder">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -70,7 +70,7 @@
     </div>
 
 
-<!--Cards with picture tops   -->
+    <!--Cards with picture tops   -->
     <div class="cardGrouper">
       <div class="card-group">
         <div class="card">
@@ -97,21 +97,54 @@
             <p class="card-text"><small class="text-muted">Example of muted text: Last updated 3 mins ago</small></p>
           </div>
         </div>
-        </div>
       </div>
+    </div>
   </div>
 
-<!-- When PRices button is clicked   -->
-<div class="servicesBox" ng-if="ctrl.showServices">
-  <h2>Services</h2>
+  <!-- When PRices button is clicked   -->
+  <div class="servicesBox" ng-if="ctrl.showServices">
+    <h2>Services</h2>
+    <ul>
+      <li>
+        <span class='listItemName'>Kerontin</span><span class='price'>$90</span>
+      </li>
+      <li>
+        <span class='listItemName'>Service1</span><span class='price'>$90</span>
+
+      </li>
+      <li>
+        <span class='listItemName'>Service2</span><span class='price'>$90</span>
+
+      </li>
+      <li>
+        <span class='listItemName'>Service3</span><span class='price'>$90</span>
+
+      </li>
+      <li>
+        <span class='listItemName'>Service4</span><span class='price'>$90</span>
+
+      </li>
+      <li>
+        <span class='listItemName'>Service5</span><span class='price'>$90</span>
+      </li>
+
+    </ul>
+
+
+  <button><a href="#" ng-click="ctrl.toggleShowServices()">Back</a></button>
+  </div>
+
+
+<!-- WHEN CONTACTS IS CLICKED show Contact "PAGE"  -->
+<div class="contactBox" ng-if="ctrl.showContacts">
+  <h5>Contacts</h5>
 </div>
-
-
 
 </body>
 <footer>
   <p>
-    Designed and Built by <a href="www.michaelpmerlo.com">Michael Merlo</a>,  © 2018
+    Designed and Built by <a href="www.michaelpmerlo.com">Michael Merlo</a>, © 2018
   </p>
 </footer>
+
 </html>
