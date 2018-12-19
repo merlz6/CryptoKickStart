@@ -23,6 +23,22 @@ nav {
 
 }
 
+.servicesHeader{
+  margin-bottom: 20px;
+}
+
+.btn {
+  width:120px;
+  height:75px;
+
+}
+
+.backButton {
+  margin: 40px auto;
+  text-align: center;
+
+}
+
 .cardGrouper {
   margin: 15px 10px 40px 10px;
 }
@@ -54,6 +70,17 @@ nav {
   margin:0px;
 }
 
+.contactContainer {
+  margin: 50px 25px;
+  text-align: center;
+  font-size:32px;
+  border:.5px solid black
+  padding:20px auto;
+}
+
+.googleMapDiv {
+  margin-top: 50px;
+}
 
 footer {
   font-size: 12px;
@@ -70,13 +97,15 @@ footer {
 ul {
   list-style: none;
   border-top: 1px solid grey;
-  margin: 0 25px;
+  margin: 50 25px;
+  padding-top: 30px;
 }
 li {
-
+  font-size: 30px;
+  font-style: italic;
 }
 .listItemName {
-  font-size: 18px;
+  font-size: 36px;
   font-weight: 500;
   margin:auto 100px;
 }
