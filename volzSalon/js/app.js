@@ -27,11 +27,11 @@ app.controller('MainController', ['$http', function($http){
       this.showContacts = false;
       this.showPhotos = false;
     }
-    this.toggleContacts = function(){
+    this.togglePhotos = function(){
       this.showHomePage = false;
       this.showServices = false;
-      this.showPhotos = false;
-      this.showContacts = true;
+      this.showPhotos = true;
+      this.showContacts = false;
     }
 
   }])

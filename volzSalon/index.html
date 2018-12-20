@@ -21,8 +21,10 @@
 
     <h2><a class="leftsideHeader" href="#" ng-click="ctrl.toggleHome()">The Volz Salon</a></h2>
     <div class="priceContact">
-      <h3><a class="rightsidelinks" href="#" ng-click="ctrl.toggleShowServices()">Services</a></h3><h3 class="navLineSeperators">|</h3>
-      <h3><a class="rightsidelinks" href="#" ng-click="ctrl.toggleShowPhotos()">Examples</a></h3><h3 class="navLineSeperators">|</h3>
+      <h3><a class="rightsidelinks" href="#" ng-click="ctrl.toggleShowServices()">Services</a></h3>
+      <h3 class="navLineSeperators">|</h3>
+      <h3><a class="rightsidelinks" href="#" ng-click="ctrl.togglePhotos()">Examples</a></h3>
+      <h3 class="navLineSeperators">|</h3>
       <h3><a class="rightsidelinks" href="#" ng-click="ctrl.toggleContacts()">Contact</a></h3>
     </div>
 
@@ -138,27 +140,40 @@
   </div>
 
 
-<!-- WHEN CONTACTS IS CLICKED show Contact "PAGE"  -->
-<div class="contactBox" ng-if="ctrl.showContacts">
+  <!-- WHEN CONTACTS IS CLICKED show Contact "PAGE"  -->
+  <div class="contactBox" ng-if="ctrl.showContacts">
 
-  <div class="contactContainer">
-    <h5>Contact</h5>
-    <div class="address box">
-      <address>
-        <strong>Taylor Volz</strong></br>
-        123 gretrert street </br>
-        West Islip, NY, 12345</br>
-        <strong>P:</strong> (123)-123-4567 </br>
-        <strong>Email:</strong> tvolz@gmail.com
-      </address>
+    <div class="contactContainer">
+
+      <div class="address box">
+        <address>
+          <strong>Taylor Volz</strong></br>
+          123 gretrert street </br>
+          West Islip, NY, 12345</br>
+          <strong>P:</strong> (123)-123-4567 </br>
+          <strong>Email:</strong> tvolz@gmail.com
+        </address>
+      </div>
+
+      <div class="googleMapDiv">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3772995578847!2d-73.29372584863513!3d40.73172267922832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e82d765240b931%3A0x56c81f69aac9275a!2s900+Bay+Shore+Ave%2C+West+Islip%2C+NY+11795!5e0!3m2!1sen!2sus!4v1544983297910"
+          width="600" height="450" frameborder="0" style="border:1px solid black" allowfullscreen></iframe>
+      </div>
+
     </div>
-
-    <div class="googleMapDiv">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3772995578847!2d-73.29372584863513!3d40.73172267922832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e82d765240b931%3A0x56c81f69aac9275a!2s900+Bay+Shore+Ave%2C+West+Islip%2C+NY+11795!5e0!3m2!1sen!2sus!4v1544983297910" width="600" height="450" frameborder="0" style="border:1px solid black" allowfullscreen></iframe>
-    </div>
-
   </div>
-</div>
+
+  <div class="photoExamples" ng-if="ctrl.showPhotos">
+    <h3>Example work</h3>
+    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+  </div>
+
+
+
 
 </body>
 <footer>

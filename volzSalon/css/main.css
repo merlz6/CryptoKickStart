@@ -58,11 +58,11 @@ nav {
 }
 
 .card-title {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 .card-text {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 
@@ -113,6 +113,21 @@ li {
 .footer > a {
   font-size: 12px;
 }
+.card {
+  height:600px;
+}
+
+.examplePhotos {
+  margin:20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:650px;
+}
+
+.photoExamples {
+  text-align: center;
+}
 
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -139,7 +154,7 @@ li {
   }
 
   .card {
-    height:500px;
+    height:600px;
     border: 1px solid lightGrey;
   }
 
