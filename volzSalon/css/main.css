@@ -90,6 +90,8 @@ footer {
   text-align: right;
   margin:0px 25px;
   border-top: 1px solid grey;
+  position: relative;
+  bottom: 0;
 }
 
 .servicesBox {
@@ -167,7 +169,9 @@ li {
     border: 1px solid lightGrey;
   }
 
-
+.cardPics {
+  height:265px;
+}
 
  }
 
@@ -239,8 +243,9 @@ li {
     flex-direction: row;
   }
   .carouselHolder {
-    margin:0px 10px;
-    height:500px;
+    margin:0px 30px;
+    height:600px;
+    text-align: center;
   }
 
 
@@ -251,6 +256,29 @@ li {
   .cardGrouper {
     margin: 10px 10px;
   }
+
+  .photoHolder {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.exampleWorkH3 {
+  margin: 25px;
+  border-bottom: 1px solid black;
+}
+
+
+.bottomCall {
+  text-align: center;
+  border-top: 1px solid grey;
+  padding: 20px 0;
+  border-bottom: 1px solid grey;
+  margin: 35px 10px 35px 10px;
+}
+.cardGrouper {
+  margin: 15px 10px 40px 10px;
+}
 
 
 }

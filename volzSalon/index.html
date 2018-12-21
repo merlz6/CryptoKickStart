@@ -82,7 +82,7 @@
           <div class="card-body">
             <h5 class="card-title">Keratin Treatment</h5>
             <p class="card-text">I dont know what it does but you can describe or say anything here</p>
-            <p class="card-text"><small class="text-muted">Example of muted text: Last updated 3 mins ago</small></p>
+
           </div>
         </div>
         <div class="card">
@@ -90,15 +90,15 @@
           <div class="card-body">
             <h5 class="card-title">Cuts and Wash</h5>
             <p class="card-text">I dont know what it does but you can describe or say anything here</p>
-            <p class="card-text"><small class="text-muted">Example of muted text: Last updated 3 mins ago</small></p>
+
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkMzkI7e7omZozgWaR_tGefeApCpCD3iY7NTNCKU6GFF4Lsl8ArA" alt="Card image cap">
+          <img class="card-img-top cardPics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkMzkI7e7omZozgWaR_tGefeApCpCD3iY7NTNCKU6GFF4Lsl8ArA" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Todays hottest hair trends</h5>
             <p class="card-text">I dont know what it does but you can describe or say anything here</p>
-            <p class="card-text"><small class="text-muted">Example of muted text: Last updated 3 mins ago</small></p>
+
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@
   </div>
 
   <!-- When PRices button is clicked   -->
-  <div class="servicesBox" ng-if="ctrl.showServices">
+  <div class="carouselHolder" ng-if="ctrl.showServices">
     <!--Services carousel  -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -205,12 +205,15 @@
   </div>
 
   <div class="photoExamples" ng-if="ctrl.showPhotos">
-    <h3>Example work</h3>
-    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
-    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
-    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
-    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
-    <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+    <h3 class="exampleWorkH3">Example work</h3>
+    <div class="photoHolder">
+      <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+      <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+      <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+      <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+      <image class="examplePhotos" src="https://dolcevitasalon-sr.com/wp-content/uploads/2018/04/DSC_5874-copy_preview-1024x683.jpeg"></image>
+    </div>
+
     <div class="backButton">
       <button class="btn btn-primary" ng-click="ctrl.toggleHome()">Back</button>
     </div>
