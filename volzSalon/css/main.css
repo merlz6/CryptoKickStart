@@ -11,7 +11,10 @@
 }
 .leftsideHeader {
   font-size: 40px;
+  font-family: 'Paytone One', sans-serif;
 }
+
+
 nav {
   align-items: baseline;
 }
@@ -128,7 +131,13 @@ li {
 .photoExamples {
   text-align: center;
 }
+.servicesCarouselH5 {
+  text-align: center;
+  font-size: 48px;
 
+  color:red;
+
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
